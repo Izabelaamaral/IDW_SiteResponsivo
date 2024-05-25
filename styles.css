@@ -1,0 +1,165 @@
+* { 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin:auto;    /* centralizei o conteúdo */
+    min-width: 320px;   /* defini a largura mínima da página */
+    max-width:100%; /* defini a largura máxima da página */
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    min-width: 320px;   /* defini a largura mínima */
+    max-width:100%; /* defini a largura máxima */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section p {
+    text-align: center;
+}
+
+section img {
+    display: block; 
+    margin: 1rem auto;
+    max-width: 100%;
+}
+
+@media (max-width: 800px) {    /* quando a tela for menor que 800px de largura a imagem será reduzida em 10% com margens laterais de 3rem centralizada */
+    section img {
+        max-width:90%; // a imagem será 
+        max-height:90%;
+        margin-left: 3rem auto;
+        margin-right: 3rem auto;
+    }
+}
+
+.services-grid {
+    display:flex; 
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media (max-width: 1025px) {    /* quando a tela for menor que 1025px de largura o conteúdo será exibido em coluna e com margens laterais de 3rem */
+    .services-grid {
+        flex-direction: column; 
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+.service {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1;
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (max-width: 1217px) {    /* quando a tela for menor que 1217px de largura todo o conteúdo referente ao formulário "Contato" será exibido com margens laterais de 3rem */
+    form {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+form label { 
+    font-weight: bold; 
+}
+
+form input, form textarea { 
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {   
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
